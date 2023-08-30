@@ -83,12 +83,7 @@ namespace HoldSystemet
             }
             private set
             {
-                if (value.Length < 10)
-                {
-                    string errMsg = "CPR nummer skal Være 10 nummer ";
-                    throw new Exception(errMsg);
-                }
-                if (value.Length > 10)
+                if (value.Length == 10)
                 {
                     string errMsg = "CPR nummer skal Være 10 nummer ";
                     throw new Exception(errMsg);
